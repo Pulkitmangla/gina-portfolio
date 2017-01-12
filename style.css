@@ -1,0 +1,27 @@
+.flex-grid {
+  display: block;
+}
+
+.col {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.col img {
+  max-width: 100%;
+}
+
+.col h3 {
+  align-self: center;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .flex-grid {
+    display: flex;
+  }
+}

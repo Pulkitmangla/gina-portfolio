@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .flex-grid {
   display: block;
 }
@@ -20,9 +24,22 @@
   border-radius: 50%;
 }
 
+.small-logo {
+  color: #fff;
+}
+
 /* Navigation */
 
 /* The side navigation menu */
+
+.nav-bar {
+  background-color: #111;
+}
+
+.hamburger-icon {
+  color: #fff;
+}
+
 .sidenav {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */

@@ -1,12 +1,12 @@
 .grid-wrapper {
-  max-width: 1200px;
+  max-width: 600px;
   display: block;
   margin: auto;
 }
 
 .col-3 {
   min-width: 300px;
-  max-width: 450px;
+  max-width: 460px;
   margin: auto;
 
   display: flex;
@@ -17,6 +17,11 @@
 
 .col-3 img {
   width: 100%;
+  margin: 0px;
+}
+
+col-3 span {
+  margin: 0;
 }
 
 body {
@@ -27,14 +32,20 @@ body {
   .grid-wrapper {
     display: flex;
     flex-wrap: wrap;
+    max-width: 900px;
   }
 
   .col-3 {
     width: 50%;
+    flex-grow: 1;
   }
 }
 
 @media (min-width: 900px) {
+  .grid-wrapper {
+    max-width: 1200px;
+  }
+
   .col-3 {
     width: 33%;
   }

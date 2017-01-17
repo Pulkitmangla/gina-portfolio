@@ -5,17 +5,18 @@
 }
 
 .col-3 {
-  height:300px;
   min-width: 300px;
   max-width: 450px;
-  /*background-image: url("images/gina-portrait.jpg");*/
-  background-position: center;
-  background-size: contain;
   margin: auto;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.col-3 img {
+  width: 100%;
 }
 
 body {

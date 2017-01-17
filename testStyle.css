@@ -1,0 +1,40 @@
+.grid-wrapper {
+  max-width: 1200px;
+  display: block;
+  margin: auto;
+}
+
+.col-3 {
+  height:300px;
+  min-width: 300px;
+  max-width: 450px;
+  /*background-image: url("images/gina-portrait.jpg");*/
+  background-position: center;
+  background-size: contain;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+}
+
+@media (min-width: 600px) {
+  .grid-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .col-3 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 900px) {
+  .col-3 {
+    width: 33%;
+  }
+}

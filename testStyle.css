@@ -1,6 +1,7 @@
 .grid-wrapper {
   max-width: 600px;
   display: block;
+  padding: 0px 15px;
   margin: auto;
 }
 
@@ -9,7 +10,7 @@
   border-top: 0px;
   border-bottom: 0px;
 
-  min-width: 300px;
+  min-width: 285px;
   max-width: 460px;
   margin: auto;
 
@@ -50,6 +51,7 @@ body {
 @media (min-width: 900px) {
   .grid-wrapper {
     max-width: 1200px;
+    padding: 0;
   }
 
   .col-3 {

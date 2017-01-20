@@ -1,5 +1,4 @@
 .grid-wrapper {
-  max-width: 600px;
   display: block;
   box-sizing: border-box;
   padding: 30px 15px;
@@ -43,7 +42,6 @@ body {
   .grid-wrapper {
     display: flex;
     flex-wrap: wrap;
-    max-width: 900px;
   }
 
   [class*='col-'] {
@@ -64,7 +62,6 @@ body {
 
 @media (min-width: 900px) {
   .grid-wrapper {
-    max-width: 1200px;
     padding: 30px 0px;
   }
 

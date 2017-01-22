@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../../styles/style.css">
+  <link rel="stylesheet" type="text/css" href="../../styles/grid-styles.css">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1"/>
+  <title>Project 1 - Gina Laverone</title>
+</head>
+<body>
+  <nav id="mySideNav" class="sidenav">
+    <ul>
+      <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../../categories/photography.html">Photography</a></li>
+      <li><a href="#">Film</a></li>
+      <li><a href="#">Design</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+
+  <div class="nav-bar">
+    <span class="hamburger-icon" onclick="openNav()">&#x2261;</span>
+    <span class="small-logo">GINA LAVERONE</span>
+  </div>
+
+  <section>
+    <div class="grid-wrapper grid-text">
+      <div class="project-caption">
+        <h1>Metamorphosis</h1>
+        <p class="date">
+          - January 2016 -
+        </p>
+      </div>
+        <p>
+          The piece illustrates the attempts to escape the many forms of constraints, ranging from the mind, body, spirit, and environment, through the use of the human form within architecture. The work also acts as means of metamorphosis with the constraints we have as humans. The photos may serve as a reminder that we are not always capable of escaping the constraints of our environment or society. We can only live the way we are capable of, given the constraint of being human. Because we are human we need to accept that we can’t desire to go beyond our physical state.
+        </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="grid-wrapper">
+      <div class="col-full-width">
+        <img id="main-image" src="../../images/metamorphosis/metamorphosis-1-gina-laverone.jpg"/>
+      </div>
+      <div class="col-1-6">
+        <a onclick="return changeMainImage(this)" href="../../images/metamorphosis/metamorphosis-1-gina-laverone.jpg"><img src="../../images/metamorphosis/metamorphosis-1-gina-laverone.jpg"/></a>
+      </div>
+      <div class="col-1-6">
+        <a onclick="return changeMainImage(this)" href="../../images/metamorphosis/metamorphosis-2-gina-laverone.jpg"><img src="../../images/metamorphosis/metamorphosis-2-gina-laverone.jpg"/></a>
+      </div>
+      <div class="col-1-6">
+        <a onclick="return changeMainImage(this)" href="../../images/metamorphosis/metamorphosis-3-gina-laverone.jpg"><img src="../../images/metamorphosis/metamorphosis-3-gina-laverone.jpg"/></a>
+      </div>
+      <div class="col-1-6"></div>
+      <div class="col-1-6"></div>
+      <div class="col-1-6"></div>
+    </div>
+  </section>
+
+  <script>
+
+    function changeMainImage(thumbnail){
+      if (document.getElementById) {
+        document.getElementById("main-image").src=thumbnail.href;
+        return false;
+      } else {
+        return true;
+      }
+    }
+
+    function openNav() {
+        document.getElementById("mySideNav").style.height = "100%";
+        document.getElementById("mySideNav").style.paddingTop = "60px";
+    }
+    function closeNav() {
+        document.getElementById("mySideNav").style.height = "0";
+        document.getElementById("mySideNav").style.paddingTop = "0px";
+    }
+  </script>
+</body>
+</html>

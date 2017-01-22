@@ -4,10 +4,16 @@ body {
 
 .img-circle {
   border-radius: 50%;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
 }
 
 .small-logo {
-  color: #fff;
+  color: #000;
+  align-self: center;
+  margin: auto;
+  font-family: 'Playfair Display';
+  letter-spacing: 1.5;
+  font-size: 16px;
 }
 
 /* Navigation */
@@ -15,30 +21,48 @@ body {
 /* The side navigation menu */
 
 .nav-bar {
-  background-color: #111;
+  background-color: #fff;
+  display: flex;
+  height: 60px;
 }
 
 .hamburger-icon {
-  color: #fff;
+  color: #000;
+  position: absolute;
+  left: 0px;
+  top: 0px;
   font-size: 48px;
+  margin-left: 20px;
+  cursor: pointer;
 }
 
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0;
-    left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidenav li {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5em;
 }
 
 /* The navigation menu links */
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 8px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;

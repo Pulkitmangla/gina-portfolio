@@ -1,26 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="../../styles/style.css">
-  <link rel="stylesheet" type="text/css" href="../../styles/grid-styles.css">
+  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+  <link rel="stylesheet" type="text/css" href="../styles/grid-styles.css">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1"/>
   <title>Project 1 - Gina Laverone</title>
 </head>
 <body>
-  <nav id="mySideNav" class="sidenav">
-    <ul>
-      <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
-      <li><a href="../../index.html">Home</a></li>
-      <li><a href="../../categories/photography.html">Photography</a></li>
-      <li><a href="#">Film</a></li>
-      <li><a href="#">Design</a></li>
-      <li><a href="#">About</a></li>
-    </ul>
-  </nav>
-
   <div class="nav-bar">
-    <span class="hamburger-icon" onclick="openNav()">&#x2261;</span>
     <span class="small-logo">GINA LAVERONE</span>
+    <span><a href="../index.html">Work</a></span>
+    <span><a href="../about.html">About</a></span>
   </div>
 
   <section>
@@ -40,31 +30,30 @@
   <section>
     <div class="grid-wrapper">
       <div class="col-full-width">
-        <img id="main-image" src="../../images/reconciliation/reconciliation-1-gina-laverone.jpg"/>
+        <img id="main-image" src="../images/reconciliation/reconciliation-1-gina-laverone.jpg"/>
       </div>
       <div class="col-1-6">
-        <a onclick="return changeMainImage(this)" href="../../images/reconciliation/reconciliation-1-gina-laverone.jpg"><img src="../../images/reconciliation/reconciliation-1-gina-laverone.jpg"/></a>
+        <a onclick="return changeMainImage(this)" href="../images/reconciliation/reconciliation-1-gina-laverone.jpg"><img src="../images/reconciliation/reconciliation-1-gina-laverone.jpg"/></a>
       </div>
       <div class="col-1-6">
-        <a onclick="return changeMainImage(this)" href="../../images/reconciliation/reconciliation-2-gina-laverone.jpg"><img src="../../images/reconciliation/reconciliation-2-gina-laverone.jpg"/></a>
+        <a onclick="return changeMainImage(this)" href="../images/reconciliation/reconciliation-2-gina-laverone.jpg"><img src="../images/reconciliation/reconciliation-2-gina-laverone.jpg"/></a>
       </div>
       <div class="col-1-6">
-        <a onclick="return changeMainImage(this)" href="../../images/reconciliation/reconciliation-3-gina-laverone.jpg"><img src="../../images/reconciliation/reconciliation-3-gina-laverone.jpg"/></a>
+        <a onclick="return changeMainImage(this)" href="../images/reconciliation/reconciliation-3-gina-laverone.jpg"><img src="../images/reconciliation/reconciliation-3-gina-laverone.jpg"/></a>
       </div>
       <div class="col-1-6">
-        <a onclick="return changeMainImage(this)" href="../../images/reconciliation/reconciliation-4-gina-laverone.jpg"><img src="../../images/reconciliation/reconciliation-4-gina-laverone.jpg"/></a>
+        <a onclick="return changeMainImage(this)" href="../images/reconciliation/reconciliation-4-gina-laverone.jpg"><img src="../images/reconciliation/reconciliation-4-gina-laverone.jpg"/></a>
       </div>
       <div class="col-1-6">
-        <a onclick="return changeMainImage(this)" href="../../images/reconciliation/reconciliation-5-gina-laverone.jpg"><img src="../../images/reconciliation/reconciliation-5-gina-laverone.jpg"/></a>
+        <a onclick="return changeMainImage(this)" href="../images/reconciliation/reconciliation-5-gina-laverone.jpg"><img src="../images/reconciliation/reconciliation-5-gina-laverone.jpg"/></a>
       </div>
       <div class="col-1-6">
-        <a onclick="return changeMainImage(this)" href="../../images/reconciliation/reconciliation-6-gina-laverone.jpg"><img src="../../images/reconciliation/reconciliation-6-gina-laverone.jpg"/></a>
+        <a onclick="return changeMainImage(this)" href="../images/reconciliation/reconciliation-6-gina-laverone.jpg"><img src="../images/reconciliation/reconciliation-6-gina-laverone.jpg"/></a>
       </div>
     </div>
   </section>
 
   <script>
-
     function changeMainImage(thumbnail){
       if (document.getElementById) {
         document.getElementById("main-image").src=thumbnail.href;
@@ -72,15 +61,6 @@
       } else {
         return true;
       }
-    }
-
-    function openNav() {
-        document.getElementById("mySideNav").style.height = "100%";
-        document.getElementById("mySideNav").style.paddingTop = "60px";
-    }
-    function closeNav() {
-        document.getElementById("mySideNav").style.height = "0";
-        document.getElementById("mySideNav").style.paddingTop = "0px";
     }
   </script>
 </body>

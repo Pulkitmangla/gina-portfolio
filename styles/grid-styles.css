@@ -133,6 +133,8 @@ a:visited {
 
 [class*='col-'] {
   padding-bottom: 30px;
+  padding-left: 2%;
+  padding-right: 2%;
 
   box-sizing: border-box;
 

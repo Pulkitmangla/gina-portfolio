@@ -94,9 +94,9 @@ a:visited {
 }
 
 .home-caption h1{
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 700;
-  line-height: 4rem;
+  line-height: 3rem;
   padding: 0px 20px;
 }
 
@@ -168,10 +168,10 @@ body {
     font-size: 16px;
   }
 
-  .home-caption h1{
+  /*.home-caption h1{
     font-size: 5rem;
     line-height: 5rem;
-  }
+  }*/
 
   .page-title {
     font-size: 5rem;
@@ -230,10 +230,10 @@ body {
 
 @media (min-width: 900px) {
 
-  .home-caption h1{
+  /*.home-caption h1{
     font-size: 7rem;
     line-height: normal;
-  }
+  }*/
 
   .page-title {
     font-size: 7em;

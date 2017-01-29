@@ -98,6 +98,7 @@ a:visited {
   font-weight: 700;
   line-height: 3.5rem;
   padding: 0px 40px;
+  margin-top: 75px;
   margin-bottom: 50px;
 }
 
@@ -170,13 +171,19 @@ a:visited {
   justify-content: center;
 }
 
+.nav-container {
+  /*justify-content: center;*/
+}
+
 .nav-bar {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  box-sizing: border-box;
   margin-bottom: 40px;
   background-color: #fff;
+  margin: auto;
 }
 
 .small-logo {
@@ -193,7 +200,7 @@ a:visited {
 .nav-link a {
   padding: 0px 20px;
   text-decoration: none;
-  color: rgb(215, 0 ,0);
+  color: rgb(190, 0 ,0);
 }
 
 body {
@@ -224,6 +231,24 @@ body {
   .grid-wrapper {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .small-logo {
+    display: flex;
+    justify-content: flex-start;
+    width: auto;
+    align-self: flex-start;
+    padding: 0;
+    flex-grow: 2;
+  }
+
+  .home-caption h1 {
+    margin-top: 0;
+  }
+
+  .nav-bar {
+    padding: 40px 40px;
+    margin-bottom: 0;
   }
 
   [class*='col-'] {
@@ -285,6 +310,19 @@ body {
 
   .grid-text {
     max-width: 800px;
+  }
+
+  .nav-bar {
+    padding: 30px 40px;
+    max-width: 80%;
+  }
+
+  .home-caption {
+    margin-top: 15px;
+  }
+
+  .home-caption h1 {
+    margin-bottom: 25px;
   }
 
   .col-1-3 {

@@ -94,12 +94,13 @@ a:visited {
 }
 
 .home-caption h1{
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
-  line-height: 3.5rem;
+  line-height: 2.5rem;
   padding: 0px 40px;
   margin-top: 75px;
   margin-bottom: 50px;
+  color: rgb(220, 0 ,0);
 }
 
 .page-title {
@@ -234,12 +235,10 @@ body {
   }
 
   .small-logo {
-    display: flex;
-    justify-content: flex-start;
+    /*display: flex;*/
     width: auto;
-    align-self: flex-start;
-    padding: 0;
-    flex-grow: 2;
+    padding: 0px 20px;
+    /*flex-grow: 1;*/
   }
 
   .home-caption h1 {

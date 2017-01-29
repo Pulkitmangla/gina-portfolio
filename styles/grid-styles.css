@@ -89,7 +89,7 @@ a:visited {
 }
 
 .home-caption {
-  margin: 30px 0px 0px 0px;
+  margin: 50px 0px 0px 0px;
   max-width: 600px;
 }
 
@@ -178,13 +178,9 @@ a:visited {
 
 .nav-bar {
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  margin-bottom: 40px;
-  background-color: #fff;
-  margin: auto;
+  align-items: flex-end;
+  margin: 40px 40px 40px 40px;
 }
 
 .small-logo {
@@ -200,7 +196,7 @@ a:visited {
 
 .nav-link a {
   padding: 0px 20px;
-  text-decoration: none;
+  text-decoration: underline;;
   color: rgb(190, 0 ,0);
 }
 
@@ -246,7 +242,6 @@ body {
   }
 
   .nav-bar {
-    padding: 40px 40px;
     margin-bottom: 0;
   }
 
@@ -312,8 +307,7 @@ body {
   }
 
   .nav-bar {
-    padding: 30px 40px;
-    max-width: 80%;
+    justify-content: flex-start;
   }
 
   .home-caption {

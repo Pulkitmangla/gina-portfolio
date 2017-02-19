@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,400i');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700');
 
+html {
+  background-color: #fafafa;
+}
+
 * {
   font-family: 'Merriweather', serif;
   font-size: 14px;

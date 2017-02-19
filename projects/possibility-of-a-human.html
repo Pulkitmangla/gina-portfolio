@@ -31,30 +31,89 @@
         <img id="carousel" src="../images/pos-human/spread1.jpg"/>
       </div>
       <div class="col-1-6">
-        <button onclick="increaseIndex()">+</button>
-        <button onclick="decreaseIndex()">-</button>
+        <button
+          id="nextButton"
+          onclick="increaseIndex()">+</button>
+        <button
+          id="backButton"
+          onclick="decreaseIndex()">-</button>
+        <select
+          id="pageSelect"
+          name="pageSelect">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+          <option>13</option>
+          <option>14</option>
+          <option>15</option>
+          <option>16</option>
+          <option>17</option>
+          <option>18</option>
+          <option>19</option>
+          <option>20</option>
+          <option>21</option>
+          <option>22</option>
+          <option>23</option>
+          <option>24</option>
+          <option>25</option>
+          <option>26</option>
+          <option>27</option>
+          <option>28</option>
+          <option>29</option>
+          <option>30</option>
+          <option>31</option>
+          <option>32</option>
+          <option>33</option>
+          <option>34</option>
+          <option>35</option>
+          <option>36</option>
+          <option>37</option>
+          <option>38</option>
+          <option>39</option>
+          <option>40</option>
+          <option>41</option>
+          <option>42</option>
+          <option>43</option>
+          <option>44</option>
+          <option>45</option>
+          <option>46</option>
+          <option>47</option>
+          <option>48</option>
+          <option>49</option>
+          <option>50</option>
+          <option>51</option>
+        </select>
+        <button onclick="goToPage()">Go to page</button>
       </div>
       <div class="col-1-6">
-        <a onclick="return changeMainImage(this)" href="../images/pos-human/test-spreads/spread-a-4-cropped-72dpi-2.jpg"><img src="../images/pos-human/test-spreads/spread-a-4-cropped-72dpi-2.jpg"/></a>
+        <a href="../images/pos-human/spread1.jpg"><img src="../images/pos-human/spread1.jpg"/></a>
       </div>
       <div class="col-1-6">
-        <a onclick="return changeMainImage(this)" href="../images/pos-human/test-spreads/spread-a-4-cropped-72dpi-3.jpg"><img src="../images/pos-human/test-spreads/spread-a-4-cropped-72dpi-3.jpg"/></a>
+        <a href="../images/pos-human/spread2.jpg"><img src="../images/pos-human/spread2.jpg"/></a>
       </div>
       <div class="col-1-6">
-        <a onclick="return changeMainImage(this)" href="../images/pos-human/test-spreads/spread-a-4-cropped-72dpi-4.jpg"><img src="../images/pos-human/test-spreads/spread-a-4-cropped-72dpi-4.jpg"/></a>
+        <a href="../images/pos-human/spread3.jpg"><img src="../images/pos-human/spread3.jpg"/></a>
+      </div>
+      <div class="col-1-6">
+        <a href="../images/pos-human/spread5.jpg"><img src="../images/pos-human/spread5.jpg"/></a>
+      </div>
+      <div class="col-1-6">
+        <a href="../images/pos-human/spread6.jpg"><img src="../images/pos-human/spread6.jpg"/></a>
       </div>
 
-      <div class="col-1-6">
-        <a onclick="return changeMainImage(this)" href="../images/pos-human/test-spreads/spread3color.jpg"><img src="../images/pos-human/test-spreads/spread3color.jpg"/></a>
-      </div>
-      <div class="col-1-6">
-        <a onclick="return changeMainImage(this)" href="../images/pos-human/test-spreads/spread3.jpg"><img src="../images/pos-human/test-spreads/spread3.jpg"/></a>
-      </div>
     </div>
   </section>
 
   <script>
-    var timerRunning = true;
     var imageIndex = 0;
 
     var images = [
@@ -111,10 +170,6 @@
       "../images/pos-human/spread52.jpg",
     ];
 
-    function Carousel(){
-      document.querySelector("#carousel").src=images[0];
-    };
-
     var intervalId;
 
     (function autoplayCarousel(){
@@ -122,31 +177,32 @@
     })();
 
     function increaseIndex(){
-      if (imageIndex < images.length) {
+      if (imageIndex < images.length - 1) {
         imageIndex++;
-        document.querySelector("#carousel").src=images[imageIndex];
+        document.getElementById("carousel").src=images[imageIndex];
       } else {
-        clearInterval(intervalId);
         imageIndex=0;
+        document.getElementById("carousel").src=images[imageIndex];
       }
     };
 
     function decreaseIndex(){
       if (imageIndex > 0) {
         imageIndex--;
-        document.querySelector("#carousel").src=images[imageIndex];
+        document.getElementById("carousel").src=images[imageIndex];
       } else {
-        imageInd
+        imageIndex=images.length-1
+        document.getElementById("carousel").src=images[imageIndex];
       }
     };
 
-    function changeMainImage(thumbnail){
-      if (document.getElementById) {
-        document.getElementById("main-image").src=thumbnail.href;
-        return false;
-      } else {
-        return true;
-      }
+    document.getElementById("nextButton").addEventListener("click", function(){clearTimeout(intervalId)});
+    document.getElementById("backButton").addEventListener("click", function(){clearTimeout(intervalId)});
+
+    function goToPage(){
+      var selectedPage=document.getElementById("pageSelect").value;
+      imageIndex=selectedPage-1;
+      document.getElementById("carousel").src=images[imageIndex];
     }
   </script>
 </body>

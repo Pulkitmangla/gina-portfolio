@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="../styles/grid-styles.css">
+  <link rel="stylesheet" type="text/css" href="../styles/styles.css">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1"/>
   <title>Project 1 - Gina Laverone</title>
 </head>
@@ -30,18 +30,20 @@
       <div class="col-full-width">
         <img id="carousel" src="../images/pos-human/spread1.jpg"/>
       </div>
-      <div class="col-full-width">
-        <div>
+      <div id="posHumanCarouselControls" class="col-full-width">
+        <div id="posHumanCarouselButtons" class="row-full-width flex-center">
           <button
             id="backButton"
-            onclick="decreaseIndex()"><</button>
-          <button id="playButton">++</button>
-          <button id="pauseButton">--</button>
+            class="controlButton"
+            onclick="decreaseIndex()">&#x23f4;</button>
+          <button id="playButton" class="controlButton">&#9658;</button>
+          <button id="pauseButton" class="controlButton">&#10073;&#10073;</button>
           <button
             id="nextButton"
-            onclick="increaseIndex()">></button>
+            class="controlButton"
+            onclick="increaseIndex()">&#x23f5;</button>
         </div>
-        <div>
+        <div id="posHumanGoToPageControls" class="row-full-width flex-center">
           <select
             id="pageSelect"
             name="pageSelect">

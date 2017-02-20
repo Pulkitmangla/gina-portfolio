@@ -30,69 +30,75 @@
       <div class="col-full-width">
         <img id="carousel" src="../images/pos-human/spread1.jpg"/>
       </div>
-      <div class="col-1-6">
-        <button
-          id="nextButton"
-          onclick="increaseIndex()">+</button>
-        <button
-          id="backButton"
-          onclick="decreaseIndex()">-</button>
-        <select
-          id="pageSelect"
-          name="pageSelect">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-          <option>6</option>
-          <option>7</option>
-          <option>8</option>
-          <option>9</option>
-          <option>10</option>
-          <option>11</option>
-          <option>12</option>
-          <option>13</option>
-          <option>14</option>
-          <option>15</option>
-          <option>16</option>
-          <option>17</option>
-          <option>18</option>
-          <option>19</option>
-          <option>20</option>
-          <option>21</option>
-          <option>22</option>
-          <option>23</option>
-          <option>24</option>
-          <option>25</option>
-          <option>26</option>
-          <option>27</option>
-          <option>28</option>
-          <option>29</option>
-          <option>30</option>
-          <option>31</option>
-          <option>32</option>
-          <option>33</option>
-          <option>34</option>
-          <option>35</option>
-          <option>36</option>
-          <option>37</option>
-          <option>38</option>
-          <option>39</option>
-          <option>40</option>
-          <option>41</option>
-          <option>42</option>
-          <option>43</option>
-          <option>44</option>
-          <option>45</option>
-          <option>46</option>
-          <option>47</option>
-          <option>48</option>
-          <option>49</option>
-          <option>50</option>
-          <option>51</option>
-        </select>
-        <button onclick="goToPage()">Go to page</button>
+      <div class="col-full-width">
+        <div>
+          <button
+            id="backButton"
+            onclick="decreaseIndex()"><</button>
+          <button id="playButton">++</button>
+          <button id="pauseButton">--</button>
+          <button
+            id="nextButton"
+            onclick="increaseIndex()">></button>
+        </div>
+        <div>
+          <select
+            id="pageSelect"
+            name="pageSelect">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+            <option>23</option>
+            <option>24</option>
+            <option>25</option>
+            <option>26</option>
+            <option>27</option>
+            <option>28</option>
+            <option>29</option>
+            <option>30</option>
+            <option>31</option>
+            <option>32</option>
+            <option>33</option>
+            <option>34</option>
+            <option>35</option>
+            <option>36</option>
+            <option>37</option>
+            <option>38</option>
+            <option>39</option>
+            <option>40</option>
+            <option>41</option>
+            <option>42</option>
+            <option>43</option>
+            <option>44</option>
+            <option>45</option>
+            <option>46</option>
+            <option>47</option>
+            <option>48</option>
+            <option>49</option>
+            <option>50</option>
+            <option>51</option>
+          </select>
+          <button id="goToPageButton" onclick="goToPage()">Go to page</button>
+        </div>
       </div>
       <div class="col-1-6">
         <a href="../images/pos-human/spread1.jpg"><img src="../images/pos-human/spread1.jpg"/></a>
@@ -198,6 +204,13 @@
 
     document.getElementById("nextButton").addEventListener("click", function(){clearTimeout(intervalId)});
     document.getElementById("backButton").addEventListener("click", function(){clearTimeout(intervalId)});
+    document.getElementById("goToPageButton").addEventListener("click", function(){clearTimeout(intervalId)});
+
+    document.getElementById("playButton").addEventListener("click", function(){
+      increaseIndex();
+      intervalId = setInterval(increaseIndex, 2000);});
+    document.getElementById("pauseButton").addEventListener("click",
+    function(){clearTimeout(intervalId)});
 
     function goToPage(){
       var selectedPage=document.getElementById("pageSelect").value;

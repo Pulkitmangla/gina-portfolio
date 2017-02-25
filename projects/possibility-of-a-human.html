@@ -106,12 +106,13 @@
         </div>
       </div>
 
-      <section class="row wrap row-full-width flex-align-center">
+      <section
+      class="row wrap row-full-width flex-align-center"
+      onclick="expander('separation-content', 'separation-expand')">
         <div class="row flex-align-center">
           <img id="separation-expand"
           class="expand-arrow"
-          src="../images/assets/arrowDown.png"
-          onclick="separationExpand()"/>
+          src="../images/assets/arrowDown.png"/>
           <h3 class="subheading">Part I: Separation</h3>
         </div>
         <section class="divider"></section>
@@ -220,9 +221,14 @@
         </section>
       </section>
 
-      <section class="row wrap row-full-width flex-align-center">
+      <section
+      class="row wrap row-full-width flex-align-center"
+      onclick="expander('connection-content', 'connection-expand')">
         <div class="row flex-align-center">
-          <img id="connection-expand" class="expand-arrow" src="../images/assets/arrowDown.png"/>
+          <img
+          id="connection-expand"
+          class="expand-arrow"
+          src="../images/assets/arrowDown.png"/>
           <h3 class="subheading">Connection</h3>
         </div>
         <section class="divider"></section>
@@ -284,9 +290,14 @@
         </section>
       </section>
 
-      <section class="row wrap row-full-width flex-align-center">
+      <section
+      class="row wrap row-full-width flex-align-center"
+      onclick="expander('deceased-content', 'deceased-expand')">
         <div class="row flex-align-center">
-          <img id="deceased-expand" class="expand-arrow" src="../images/assets/arrowDown.png"/>
+          <img
+          id="deceased-expand"
+          class="expand-arrow"
+          src="../images/assets/arrowDown.png"/>
           <h3 class="subheading">Part II: Remnants Of The Deceased</h3>
         </div>
         <section class="divider"></section>
@@ -347,9 +358,14 @@
         </section>
       </section>
 
-      <section class="row wrap row-full-width flex-align-center">
+      <section
+      class="row wrap row-full-width flex-align-center"
+      onclick="expander('possibilities-content', 'possibilities-expand')">
         <div class="row flex-align-center">
-          <img id="possibilities-expand" class="expand-arrow" src="../images/assets/arrowDown.png"/>
+          <img
+          id="possibilities-expand"
+          class="expand-arrow"
+          src="../images/assets/arrowDown.png"/>
           <h3 class="subheading">Possibilities</h3>
         </div>
         <section class="divider"></section>
@@ -527,15 +543,19 @@
       document.getElementById("carousel").src=images[imageIndex];
     }
 
-    function separationExpand(){
-      if (document.getElementById("separation-content").style.display = "none"){
-        document.getElementById("separation-expand").src = "../images/assets/arrowUp.png";
-        document.getElementById("separation-content").style.display = "block";
-      } else if (document.getElementById("separation-content").style.display = "block") {
-        document.getElementById("separation-expand").src = "../images/assets/arrowDown.png";
-        document.getElementById("separation-content").style.display = "none";
+    function expander(contentName, expandName) {
+      var content = document.getElementById(contentName);
+      var expand = document.getElementById(expandName);
+
+      if (content.style.display == "block"){
+        content.style.display = "none";
+        expand.src = "../images/assets/arrowDown.png";
+      } else {
+        expand.src = "../images/assets/arrowUp.png";
+        content.style.display = "block";
       }
     }
+
   </script>
 </body>
 </html>

@@ -28,6 +28,7 @@ h2 {
 
 h3 {
   font-size: 1.45rem;
+  letter-spacing: .5px;
 }
 
 h4 {
@@ -156,6 +157,31 @@ option {
   margin-bottom: 20px;
 }
 
+.subheading {
+}
+
+.expand-arrow {
+  height: 30px;
+  padding-right: 10px;
+}
+
+.quote-list {
+  list-style: none;
+  padding-left: 0px;
+  text-align: center;
+}
+
+.quote-list-item {
+  line-height: 1.8rem;
+  margin-bottom: 1.8rem;
+}
+
+.divider {
+  width: 100%;
+  border-bottom: 1px solid rgba(0,0,0,0.12);
+  margin-bottom: 40px;
+}
+
 .home-caption {
   margin: 50px 0px 0px 0px;
   max-width: 600px;
@@ -202,6 +228,22 @@ option {
   text-align: center;
 }
 
+#separation-content {
+  display: none;
+}
+
+#connection-content {
+  display: none;
+}
+
+#deceased-content {
+  display: none;
+}
+
+#possibilities-content {
+  display: none;
+}
+
 /* -------------------------------------------------
 
 COLUMN AND ROW STYLES
@@ -226,6 +268,10 @@ COLUMN AND ROW STYLES
 
 .flex-center {
   justify-content: center;
+  align-items: center;
+}
+
+.flex-align-center {
   align-items: center;
 }
 

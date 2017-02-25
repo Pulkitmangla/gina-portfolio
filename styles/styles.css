@@ -58,41 +58,68 @@ a:visited {
   color: rgb(100, 100, 100);
 }
 
-.controlButton {
+.icon-button {
   border: none;
   background-color: inherit;
-  font-size: 24px;
+  font-size: 21px;
+  color: rgb(190,0,0);
   /*text-shadow: 0px 3px #bbb;*/
 }
 
-#backButton {
+#back-button {
   flex-grow: 2;
 }
 
-#nextButton {
+#next-button {
   flex-grow: 2;
 }
 
-#pauseButton {
+#pause-button {
   flex-grow: 1;
 }
 
-#playButton {
+#play-button {
   flex-grow: 1;
 }
 
-#posHumanCarouselControls {
+#pos-human-carousel-controls {
   z-index: 2;
-  margin-top: -30px;
-  margin-bottom: 40px;
+  margin-top: -10px;
+  margin-bottom: 30px;
+
 }
 
-#posHumanCarouselButtons {
+.carousel-buttons {
   margin-bottom: 25px;
+  font-size: 60px;
 }
 
-#posHumanGoToPageControls {
+.carousel-controls {
+}
 
+#pos-human-go-to-page-controls {
+
+}
+
+.button-secondary {
+  border: none;
+  background-color: #ddd;
+  font-family: sans-serif;
+  padding: 10px 15px;
+  margin: 10px;
+}
+
+select {
+  border: none;
+  margin: 10px;
+  background-color: inherit;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: underline;
+}
+
+option {
+  font-family: sans-serif;
 }
 
 .category-caption {
@@ -109,7 +136,7 @@ a:visited {
 
 .date {
   font-style: italic;
-  color: #ccc;
+  color: #aaa;
 }
 
 .category-caption .date {
@@ -206,6 +233,11 @@ COLUMN AND ROW STYLES
   width: 100%;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
 [class*='col-']:last-of-type {
   border-bottom: none;
   margin-bottom: 0;
@@ -218,6 +250,14 @@ COLUMN AND ROW STYLES
 
 [class*='col-'] a {
   margin: 0px;
+}
+
+.mobile-col-1-2 {
+  width: 50%;
+}
+
+.wrap {
+  flex-wrap: wrap;
 }
 
 .img-circle {
@@ -282,6 +322,7 @@ body {
 }
 
 @media (min-width: 617px) {
+
   .grid-text {
     max-width: 80%;
   }
@@ -343,6 +384,10 @@ body {
 
   .col-1-6 {
     width: 50%;
+  }
+
+  .thumb-small {
+    width: 33%;
   }
 }
 

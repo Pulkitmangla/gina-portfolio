@@ -229,6 +229,10 @@ COLUMN AND ROW STYLES
   align-items: center;
 }
 
+.flex-top {
+  align-items: flex-start;
+}
+
 .row-full-width {
   width: 100%;
 }

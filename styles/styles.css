@@ -64,34 +64,36 @@ a:visited {
   background-color: inherit;
   font-size: 21px;
   color: rgb(190,0,0);
-  /*text-shadow: 0px 3px #bbb;*/
 }
 
 #back-button {
-  flex-grow: 2;
+  width: 30px;
+  padding-right: 15px;
 }
 
 #next-button {
-  flex-grow: 2;
+  width: 30px;
+  padding-left: 15px;
 }
 
 #pause-button {
-  flex-grow: 1;
 }
 
 #play-button {
-  flex-grow: 1;
+  padding-right: 15px;
+}
+
+#carousel {
+  padding-top: 30px;
 }
 
 #pos-human-carousel-controls {
   z-index: 2;
-  margin-top: -10px;
-  margin-bottom: 30px;
-
+  margin-top: -30px;
 }
 
 .carousel-buttons {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   font-size: 60px;
 }
 
@@ -174,6 +176,7 @@ option {
 .quote-list-item {
   line-height: 1.8rem;
   margin-bottom: 1.8rem;
+  display: block;
 }
 
 .divider {
@@ -288,6 +291,11 @@ COLUMN AND ROW STYLES
   flex-direction: row;
 }
 
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
 [class*='col-']:last-of-type {
   border-bottom: none;
   margin-bottom: 0;
@@ -360,11 +368,6 @@ body {
     font-size: 16px;
   }
 
-  /*.home-caption h1{
-    font-size: 5rem;
-    line-height: 5rem;
-  }*/
-
   .page-title {
     font-size: 5rem;
     line-height: 5rem;
@@ -382,11 +385,36 @@ body {
     flex-wrap: wrap;
   }
 
+  .project-caption {
+    margin-top: 75px;
+    margin-bottom: 15px;
+  }
+
+  .icon-button {
+    font-size: 30px;
+  }
+
+  #back-button {
+    width: 45px;
+    padding-right: 30px;
+  }
+
+  #next-button {
+    width: 45px;
+    padding-left: 30px;
+  }
+
+  #play-button {
+    padding-right: 30px;
+  }
+
+  #pos-human-carousel-controls {
+    margin-top: -75px;
+  }
+
   .small-logo {
-    /*display: flex;*/
     width: auto;
     padding: 0px 20px;
-    /*flex-grow: 1;*/
   }
 
   .home-caption h1 {
@@ -404,11 +432,6 @@ body {
     border-bottom: none;
     padding-bottom: 30px;
     margin-bottom: 0;
-  }
-
-  .project-caption {
-    margin-top: 30px;
-    margin-bottom: 30px;
   }
 
   .col-full-width {
@@ -443,10 +466,13 @@ body {
 
 @media (min-width: 900px) {
 
-  /*.home-caption h1{
-    font-size: 7rem;
-    line-height: normal;
-  }*/
+  #pos-human-carousel-controls {
+    margin-top: -125px;
+  }
+
+  .project-caption {
+    margin-top: 60px;
+  }
 
   .page-title {
     font-size: 7em;

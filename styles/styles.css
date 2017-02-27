@@ -71,6 +71,21 @@ a:visited {
   color: rgb(190,0,0);
 }
 
+.iframe-wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 51%;
+}
+
+.iframe-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
 #back-button {
   width: 30px;
   padding-right: 15px;

@@ -23,12 +23,11 @@ h1 {
 }
 
 h2 {
-  font-size: 1.64rem;
+  font-size: 1.6rem;
 }
 
 h3 {
   font-size: 1.45rem;
-  letter-spacing: .5px;
 }
 
 h4 {
@@ -48,7 +47,6 @@ p {
   font-weight: 300;
   font-size: 1.1rem;
   line-height: 1.8em;
-  padding: 0px 40px;
 }
 
 a {
@@ -57,6 +55,12 @@ a {
 
 a:visited {
   color: rgb(100, 100, 100);
+}
+
+.footer-text {
+  font-size: 14px;
+  color: rgba(0,0,0,0.54);
+  padding-top: 30px;
 }
 
 .icon-button {
@@ -130,7 +134,7 @@ option {
 }
 
 .category-caption h2 {
-  margin: 20px 0px 5px 0px;
+  margin: 30px 0px 5px 0px;
 }
 
 .category-caption p {
@@ -223,7 +227,7 @@ option {
 
 .grid-text {
   max-width: 800px;
-  padding: 0px 0px;
+  padding-top: 0px;
   justify-content: center;
 }
 
@@ -269,9 +273,8 @@ COLUMN AND ROW STYLES
   display:flex;
 }
 
-.flex-center {
+.flex-justify-center {
   justify-content: center;
-  align-items: center;
 }
 
 .flex-align-center {
@@ -280,6 +283,10 @@ COLUMN AND ROW STYLES
 
 .flex-top {
   align-items: flex-start;
+}
+
+.text-align-center {
+  text-align: center;
 }
 
 .row-full-width {
@@ -362,6 +369,10 @@ body {
   margin: 0;
 }
 
+.border-top {
+  border-top: 1px solid rgba(0,0,0,0.12);
+}
+
 @media (min-width: 500px) {
   * {
     font-size: 16px;
@@ -425,8 +436,9 @@ body {
   }
 
   [class*='col-'] {
-    border: 10px solid rgba(255, 255, 255, 0);
-    border-top: 0px;
+    border-left: 10px solid rgba(255, 255, 255, 0);
+    border-right: 10px solid rgba(255, 255, 255, 0);
+    border-bottom: 10px solid rgba(255, 255, 255, 0);
     flex-grow: 1;
     border-bottom: none;
     padding-bottom: 30px;
@@ -485,7 +497,7 @@ body {
   }
 
   .grid-text {
-    max-width: 800px;
+    max-width: 760px;
   }
 
   .nav-bar {

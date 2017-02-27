@@ -46,7 +46,8 @@ h2 a {
 p {
   font-weight: 300;
   font-size: 1.1rem;
-  line-height: 1.8em;
+  line-height: 1.82em;
+  color: rgba(0,0,0,0.87);
 }
 
 a {
@@ -496,8 +497,8 @@ body {
     padding: 30px 20px;
   }
 
-  .grid-text {
-    max-width: 760px;
+  .line-length-constrain {
+    max-width: 600px;
   }
 
   .nav-bar {

@@ -399,6 +399,7 @@ body {
   .project-caption {
     margin-top: 75px;
     margin-bottom: 15px;
+    flex-basis: 100%;
   }
 
   .icon-button {
